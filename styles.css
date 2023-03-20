@@ -1,0 +1,117 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    margin: 2%;
+    padding: 2%;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card{
+    width: 25%;
+    padding: 1.1rem;
+    background-color: hsl(216, 50%, 16%);
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12% 0% 6%
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.description{
+    color: hsl(215, 51%, 70%);
+    font-weight: 200;
+}
+
+.image-hover{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-hover > .image{
+    width: 100%;
+    border-radius: 4%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+}
+
+.image-hover:hover > .new-image.fade{
+    opacity: 1;
+}
+
+.image-hover > .new-image.fade{
+    opacity: 0;
+}
+
+.image-hover > .new-image{
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(178, 100%, 50%, .4);
+    padding: 1rem;
+    border-radius: 5% ;
+}
+
+.image-hover>.image, .image-hover>.new-image{
+    transition: 200ms ease-in-out;
+}
+
+.avatar{
+    border: 1px solid #fff ;
+    border-radius: 100%;
+    height: 40px;
+    margin: auto 3% auto 0%;
+}
+
+.card-footer{
+    border: none;
+    padding-top: 0%;
+    color:  hsl(215, 51%, 70%);
+    font-size: 300;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);
+    padding: 0% 0% 3% 0%;
+}
+
+.name{
+    color: #fff;
+    cursor: pointer;
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.col2{
+    text-align: right;
+}
+
+.desc1{
+    color:  hsl(178, 100%, 50%);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.desc2{
+    color:hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+    .card{
+        margin-top: 5%;
+        width: 80%;
+    }
+}
